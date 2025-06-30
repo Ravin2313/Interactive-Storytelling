@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HeroVerse - Interactive Storytelling</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Orbitron", sans-serif;
+        background: linear-gradient(135deg, #0b0c2a, #1a1d35);
+        color: #e0ffe0;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: limegreen;
+        text-shadow: 0 0 8px limegreen;
+      }
+
+      p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin-bottom: 40px;
+      }
+
+      .start-btn {
+        padding: 15px 30px;
+        background-color: limegreen;
+        color: black;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 15px rgba(0, 255, 0, 0.4);
+      }
+
+      .start-btn:hover {
+        background-color: #99ff99;
+        transform: scale(1.05);
+      }
+
+      footer {
+        position: absolute;
+        bottom: 10px;
+        font-size: 0.9rem;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to HeroVerse</h1>
+    <p>
+      Choose your hero, shape your destiny, and relive your favorite universes.
+      Are you ready to begin your journey?
+    </p>
+    <a href="/select"><button class="start-btn">Start Adventure</button></a>
+
+    <footer>Made with ❤️ by Ravin | HeroVerse © 2025</footer>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= title || "Story" %></title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1><%= title || "Interactive Story" %></h1>
+      <p><%= story %></p>
+
+      <% if (choices && choices.length > 0) { %>
+      <div class="choices">
+        <% choices.forEach(choice => { %>
+        <a href="<%= choice.link %>">
+          <button><%= choice.text %></button>
+        </a>
+        <% }) %>
+      </div>
+      <% } else { %>
+      <div class="choices">
+        <a href="/"><button>Back to Stories</button></a>
+      </div>
+      <% } %>
+    </div>
+
+    <% if (bgMusic) { %>
+    <audio id="bg-music" src="<%= bgMusic %>" autoplay loop></audio>
+    <% } %>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
